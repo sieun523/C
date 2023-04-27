@@ -116,3 +116,16 @@ int main(void)
     return 0;
 }
 ```
+```c
+#include <stdio.h>      /*부동소수점 사용시 주의 사항*/
+
+int main(void)
+{
+    float value = 0.1;        /*이진법으로는 정확하게 나타낼 수 없는 값들이 있기 때문이다. 0.1도 
+                              그 중의 하나이다. */
+
+    printf("%.20f\n", value); // %.20는 소수점 이하를 20자리로 출력
+
+    return 0;
+}
+```
