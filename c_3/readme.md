@@ -19,7 +19,7 @@ int main(void)
 ```
 ```c
 #include <stdio.h>
-#include <limits.h>
+#include <limits.h> //각 자료형의 최대값과 최소값은 여기에 정의되어 있다.
 
 int main(void)
 {
