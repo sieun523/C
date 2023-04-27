@@ -100,3 +100,19 @@ int main(void)
     return 0;
 }
 ```
+```c
+#include <stdio.h> /*부동 소수점 자료형의 크기 계산*/
+
+int main(void)
+{
+    float x = 1.23456e-38;
+    float y = 1.23456e-40;
+    float z = 1.23456e-46; //숫자가 작아서 언더플로우 발생
+
+    printf("x = %e\n",x);
+    printf("x = %e\n",y);
+    printf("x = %e\n",z);
+
+    return 0;
+}
+```
