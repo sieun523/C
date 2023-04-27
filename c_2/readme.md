@@ -28,3 +28,15 @@ int main(void)
 }
 ```
 ```c
+#define _CRT-SECURE_NO_WARNINGS //scanf()에 오류가 발생하면 소스 파일의 처음에 정의해준다
+#include <stdio.h>
+
+int main(void)
+{
+    int x;
+    printf("정수를 입력하시오:");
+    scanf("%d", &x);  //형식지정자와 변수의 주소 입력
+    printf("입력된 정수 = %d\n", x);
+    return 0;
+
+}
