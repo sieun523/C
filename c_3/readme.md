@@ -69,3 +69,18 @@ int main(void)
     return 0;
 }
 ```
+```c
+#include <stdio.h>
+
+int main(void)
+{
+    int x = 3;
+    int y = -3; //음수가 2의 보수로 표현되는지를 알아보자
+
+    printf("x = %08x\n", x); //8자리의 16진수로 출력한다.
+    printf("y = %08x\n", y); //8자리의 16진수로 출력한다.
+    printf("x+y = %08x\n", x+y);  //8자리의 16진수로 출력한다.
+
+    return 0;
+}
+```
