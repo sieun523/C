@@ -154,3 +154,70 @@ int main(void)
     return 0;
 }
 ```
+```c
+#include <stdio.h>
+int main(void)
+{
+    int id, pass;
+
+    printf("아이드와 패스워드를 4개의 숫자로 입력하시오:\n");
+
+    printf("id:____\b\b\b\b");
+    scanf("%d", &id);
+
+    printf("pass:____\b\b\b\b");
+    scanf("%d", &pass);
+    printf("\a입력된 아이디는 \"%d\"이고 패스워드는 \"%d\"입니다.", id, pass);
+
+    return 0;
+
+}
+```
+```c
+#include <stdio.h>
+int main(void)
+{
+    char code = 'A';
+    printf("%d %d %d\n", code, code+1, code+2); //65 66 67이 출력된다.
+    printf("%c %c %c\n", code, code+1, code+2); // A B C가 출력된다
+    return 0;
+
+}
+``` 
+```c
+#include <stdio.h>
+int main(void)
+{
+    int x, y, z, sum;
+    sum = 0; //변수는 사용하기 전에 반드시 초기화 시켜야 함!! 아니면 에러
+
+    printf("3개의 정수를 입력하세요(x,y,z):");
+    scanf("%d %d %d", &x, &y, &z);
+    sum += x;
+    sum += y;
+    sum += z;
+    printf("3개의 정수의 합은 %d\n", sum);
+    return 0;
+
+}
+``` 
+```c
+#include <stdio.h>
+int main(void)
+{
+    double light_speed = 300000; //빛의 속도 저장하는 변수    //초기화
+    double distance = 149600000; //태양과 지구 사이 거리 저장하는 변수
+        
+    double time;  //시간을 나타내는 변수
+
+    time = distance / light_speed;  //거리를 빛의 속도로 나눈다
+    time = time / 60.0;  //초를 분으로 변환한다
+
+    printf("빛의 속도는 %fkm/s \n", light_speed); //빛의 속도 출력
+    printf("태양과 지구와의 거리 %fkm\n", distance); //거리 출력
+    printf("도달 시간은 %f초 \n", time); //시간을 출력
+    
+    return 0;
+
+}
+```
